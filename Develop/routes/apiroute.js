@@ -47,7 +47,24 @@ app.post("/api/workouts/", ({body}, res) => {
             res.status(400).json(err);
       }); 
 });
- 
+
+app.put("/api/workouts/:id", (req, res) => {
+      Exercise.findOneAndUpdate({
+          _id: req.params.id
+      }, {
+          $push: {
+              exercises: req.body
+          }
+      }, {
+          new: true
+      })
+      .then(dbWorkout => {
+          res.json(dbWorkout);
+      }).catch(err => {
+          res.json(err);
+      });
+  });
+
 app.get("/exercise", function(req, res) {
    res.sendFile(path.join(__dirname, "../public/exercise.html"));
 });
