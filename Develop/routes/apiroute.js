@@ -36,8 +36,18 @@ app.get("/api/workouts/range", (req, res) => {
      .catch((err) => {
          res.json(err);
      });     
-   });
-  
+});
+
+app.post("/api/workouts/", ({body}, res) => {
+      Exercise.create(body)
+            .then(dbWorkout => {
+            res.json(dbWorkout);
+            })
+            .catch(err => {
+            res.status(400).json(err);
+      }); 
+});
+ 
 app.get("/exercise", function(req, res) {
    res.sendFile(path.join(__dirname, "../public/exercise.html"));
 });
