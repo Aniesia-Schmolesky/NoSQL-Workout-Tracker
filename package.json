@@ -1,0 +1,20 @@
+{
+    "name": "mongoose_skeleton",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node Develop/server.js",
+      "watch": "nodemon Develop/server.js",
+      "seed": "node Develop/seeders/seed.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^5.3.16",
+      "morgan": "^1.9.1"
+    }
+  }
+  
