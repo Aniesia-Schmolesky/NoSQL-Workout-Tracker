@@ -4,14 +4,27 @@
 
 This application allows you to log your fitness workouts through out the week and displays graphs from the past seven days so you can track your progress. 
 
+![image](https://user-images.githubusercontent.com/85134150/137261785-4b759cef-7fae-43c7-8fa5-5dd537d1be14.png)
+
+
+![image](https://user-images.githubusercontent.com/85134150/137261877-2097610d-0c9b-4a70-82d4-24185990ce32.png)
+
+
+![image](https://user-images.githubusercontent.com/85134150/137261977-5c808f2d-b3e4-405b-9af9-0b3f1db20a80.png)
+
 
 ## Table of Contents
 
 -Installation
+
 -Usage
+
 -Credits
+
 -License
+
 -Contributing
+
 -Questions
 
 ## Installation
