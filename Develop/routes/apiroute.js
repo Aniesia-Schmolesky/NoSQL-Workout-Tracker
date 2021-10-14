@@ -1,6 +1,6 @@
 const path = require("path");
 const app = require("express").Router();
-const Exercise = require("../models");
+const Exercise = require("../models/workout");
 
 app.get("/api/workouts", (req, res) => {
    Exercise.aggregate([
